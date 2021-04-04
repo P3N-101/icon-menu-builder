@@ -1,6 +1,8 @@
 # Icon Menu Builder for Power Apps
 
 ![Menu Generator](./assets/1.0.0.4.png)
+# Update 1.0.0.6
+- Fixed wrapcount calculations on the Icons gallery so it displays correctly when the menu container is expanded
 # Update 1.0.0.5
 
 - Refactored Icon collections into output properties of a new component __PP-Icons__ for performance and making editing possible (Pushing the limits of how much data can be self contained)
@@ -20,13 +22,13 @@
 
 
 ### Icon Sets
-- [Fluent UI Icons](https://github.com/microsoft/fluentui-system-icons) (6246) v1.1.116
-- [Font Awesome Free](https://github.com/FortAwesome/Font-Awesome) (1612) v5.15.3
-- [Simple Icons](https://github.com/simple-icons/simple-icons) (1874) v4.17.0
-- [Octicons](https://github.com/primer/octicons) (414) v12.1.0
-- [Material Design](https://github.com/Templarian/MaterialDesign-SVG) (5962) v5.9.55
-- Microsoft Graphics (903) - Svg Microsoft Graphics 
-- [VS Code](https://github.com/vscode-icons/vscode-icons) (1070) v11.3.0
+- [Fluent UI Icons](https://github.com/microsoft/fluentui-system-icons) (6246)  - v1.1.116
+- [Font Awesome Free](https://github.com/FortAwesome/Font-Awesome) (1612)  - v5.15.3
+- [Simple Icons](https://github.com/simple-icons/simple-icons) (1874)  - v4.17.0
+- [Octicons](https://github.com/primer/octicons) (414) - v12.1.0
+- [Material Design](https://materialdesignicons.com) (5962) - v5.9.55
+- Microsoft Graphics (903) - Svg Microsoft Graphics
+- [VS Code](https://github.com/vscode-icons/vscode-icons) (1070)  - v11.3.0
 
 __Single Color Icons:__  16,108
 __Multi Color Icons:__    1,969
