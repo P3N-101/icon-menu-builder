@@ -1,4 +1,4 @@
-# Fluent UI Menu Builder for Power Apps
+# Icon Menu Builder for Power Apps
 
 ![Menu Generator](./assets/1.0.0.4.png)
 # Update 1.0.0.5
@@ -38,7 +38,7 @@ You will require a Power Platform environment conigured with a database and conf
 
 1. Import the ColorPicker_Managed.zip solution 
 2. Import the CopyTextSolution.zip solution
-3. Import the FluentUIMenuGenerator_1_0_0_3.zip
+3. Import the FluentUIMenuGenerator_1_0_0_5_managed.zip
 
 Open the solution and play the canvas app.
-s
+
