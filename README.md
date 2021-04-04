@@ -1,7 +1,7 @@
 # Fluent UI Menu Builder for Power Apps
 
 ![Menu Generator](./assets/1.0.0.4.png)
-# Update 1.0.0.4
+# Update 1.0.0.5
 
 - Refactored Icon collections into output properties of a new component __PP-Icons__ for performance and making editing possible (Pushing the limits of how much data can be self contained)
 - Added 5962 Material Design Icons
