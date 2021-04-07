@@ -1,6 +1,13 @@
 # Icon Menu Builder for Power Apps
 
-![Menu Generator](./assets/1.0.0.4.png)
+![Menu Generator](./assets/1.0.0.7.png)
+
+# Update 1.0.0.7
+- Renamed to 'Icon Menu Builder' as it includes more than just the Fluent UI Icons
+- Download SVG files from created icons... Utilises [CanvasFileDownloaderControl](https://github.com/rwilson504/PCFControls/releases) - you will need to install this in your environment to use this new version.
+- Created for large screen usage... ;)
+- Updated the Collection Screen to make it clearer to read.
+![Menu Generator](./assets/1.0.0.7-1.png)
 # Update 1.0.0.6
 - Fixed wrapcount calculations on the Icons gallery so it displays correctly when the menu container is expanded
 # Update 1.0.0.5
