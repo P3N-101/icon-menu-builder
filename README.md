@@ -5,7 +5,7 @@
 ## Features
 - Create Menu Icon Collections for the PP-MainMenu Component included in the solution
 - Copy Image data and Collection code to the clipboard, using [Todd Baginski](https://github.com/TBag/power-apps-copy-text-to-clipboard) PCFCopyTextComponent.
-- Over 11000 icons included
+- Over 20000+ icons included, with no data source required
 - Color Picker from PowerApps COE
 - Contrast Checker for WCAG 2.1 non-text contrast accessibility
 
