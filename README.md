@@ -18,7 +18,7 @@
 - [Material Design](https://materialdesignicons.com) (5962) - v5.9.55
 - Microsoft Graphics (903) - Svg Microsoft Graphics
 - [VS Code](https://github.com/vscode-icons/vscode-icons) (1070)  - v11.3.0
-- [Not Emoji](https://github.com/googlefonts/noto-emoji) (2307) - v13.1s
+- [Noto Emoji](https://github.com/googlefonts/noto-emoji) (2307) - v13.1s
 - __Total:__        20,418
 # Installation
 
