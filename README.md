@@ -18,20 +18,11 @@
 - [Material Design](https://materialdesignicons.com) (5962) - v5.9.55
 - Microsoft Graphics (903) - Svg Microsoft Graphics
 - [VS Code](https://github.com/vscode-icons/vscode-icons) (1070)  - v11.3.0
-- [Not Emoji](https://github.com/googlefonts/noto-emoji) (2307) - v13.1
-
-Fluent UI Icons:    6246
-Font Awesome:       1612
-Simple Icons:       1874
-Octicons:            414
-Material Design:    5962
-MS Product Icons:    933
-VS Code Icons:      1070
-Noto Emoji's:       2307
-__Total:__            20,418
+- [Not Emoji](https://github.com/googlefonts/noto-emoji) (2307) - v13.1s
+- __Total:__        20,418
 # Installation
 
-You will require a Power Platform environment conigured with a database and configured to allow Code Components for canvas apps. All the solutions required are in the soltions folder.
+You will require a Power Platform environment conigured with a database and configured to allow Code Components for canvas apps. All the solutions required are in the solutions folder.
 
 1. Import the ColorPicker_Managed.zip solution 
 2. Import the CopyTextSolution.zip solution
