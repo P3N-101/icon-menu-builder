@@ -1,0 +1,29 @@
+.CanvizLLCPCF\.PCFCopyTextComponent > div {
+	display: flex;
+	align-items: flex-start;
+}
+.CanvizLLCPCF\.PCFCopyTextComponent .single {
+	align-items: normal;;
+}
+
+.CanvizLLCPCF\.PCFCopyTextComponent .CopyText_Input_Style {
+	box-sizing: border-box;
+	width: 100%;
+	min-width: 50px;
+	resize: none;
+	padding: 5px 10px;
+	margin: 0;
+}
+.CanvizLLCPCF\.PCFCopyTextComponent .CopyText_Input_Error_Style {
+	color: red;
+}
+
+.CanvizLLCPCF\.PCFCopyTextComponent .CopyText_Button_Style {
+	box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+	text-decoration: none;
+    margin-left: 6px ;
+    padding: 5px 10px;
+}

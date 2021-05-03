@@ -1,0 +1,74 @@
+"'PP-TeamsRail' As CanvasComponent":
+    DarkColor: =RGBA(83, 101, 150, 1)
+    Fill: ='PP-TeamsRail'.LightColor
+    Height: =640
+    hideMenu: =true
+    LightColor: =RGBA(230, 234, 240, 1)
+    MenuExpanded: =menuExpanded
+    menuHidden: =true
+    MenuItemDarkIcon: =SampleImage
+    MenuItemIcon: =Icon.Person
+    MenuItems: |-
+        =Table({MenuText:"Sample",Tab:"Sample",Icon:SampleImage,DarkIcon:SampleImage})
+    MenuItemSelectColour: =ColorFade(RGBA(10,36,106,1),0.3)
+    OnReset: ='PP-TeamsRail'.reset
+    reset: =true
+    VarSelectedItem: =gal_Menu_1.Selected.MenuText
+    Width: =80
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    gal_Menu_1 As gallery.galleryVertical:
+        BorderColor: =ColorFade(lbl_MenuText_1.Fill,0.8)
+        Default: =First('PP-TeamsRail'.MenuItems)
+        Fill: ='PP-TeamsRail'.LightColor
+        Height: =CountRows('PP-TeamsRail'.MenuItems)*70
+        Items: ='PP-TeamsRail'.MenuItems
+        Layout: =Layout.Vertical
+        OnSelect: =If('PP-TeamsRail'.hideMenu = true,Set(menuExpanded,false),Set(menuExpanded,true))
+        TemplatePadding: =0
+        TemplateSize: =70
+        Width: =Parent.Width
+        X: =0.00
+        ZIndex: =1
+
+        Rectangle3 As rectangle:
+            Fill: =If(ThisItem.IsSelected,ColorFade('PP-TeamsRail'.DarkColor,0.8),'PP-TeamsRail'.LightColor)
+            Height: =70
+            HoverFill: =ColorFade('PP-TeamsRail'.LightColor,0.4)
+            OnSelect: =Select(Parent)
+            Width: =80
+            ZIndex: =1
+
+        icon_1 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =Transparent
+            Height: =34
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =ThisItem.DarkIcon
+            OnSelect: =Select(Parent)
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Tooltip: =ThisItem.MenuText
+            Width: =34
+            X: =22
+            Y: =12
+            ZIndex: =2
+
+        lbl_MenuText_1 As label:
+            Align: =Align.Center
+            Height: =22
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: =ThisItem.MenuText
+            Width: =80
+            Y: =46
+            ZIndex: =3
+

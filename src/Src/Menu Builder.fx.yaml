@@ -1,0 +1,1262 @@
+"'Menu Builder' As screen":
+    OnVisible: |-
+        =Set(galDefault,{
+                ID: 1,
+                ParentItem: 0,
+                MenuText: "Home",
+                Expanded:false,
+                SubItems:false,
+                Tab: "home",
+                Icon: "data:image/svg+xml," & EncodeUrl(
+                    "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='12' height='12' version='1.1'>
+           <path fill='#232130'
+        d='M5.7 1.1a.5.5 0 01.6 0l4.12 3.2c.37.29.58.73.58 1.19V10a1 1 0 01-1 1H8a1 1 0 01-1-1V7H5v3a1 1 0 01-1 1H2a1 1 0 01-1-1V5.49c0-.46.21-.9.58-1.18l4.11-3.2zM6 2.14L2.2 5.1a.5.5 0 00-.2.4V10h2V7a1 1 0 011-1h2a1 1 0 011 1v3h2V5.49a.5.5 0 00-.2-.4L6 2.13z' />
+        </svg>"
+                )
+            });
+        ClearCollect(MenuItems,Table(
+            {
+                ID: 1,
+                ParentItem: 0,
+                MenuText: "Home",
+                Expanded:false,
+                SubItems:false,
+                Tab: "home",
+                Icon: "data:image/svg+xml," & EncodeUrl(
+                    "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='12' height='12' version='1.1'>
+           <path fill='#232130'
+        d='M5.7 1.1a.5.5 0 01.6 0l4.12 3.2c.37.29.58.73.58 1.19V10a1 1 0 01-1 1H8a1 1 0 01-1-1V7H5v3a1 1 0 01-1 1H2a1 1 0 01-1-1V5.49c0-.46.21-.9.58-1.18l4.11-3.2zM6 2.14L2.2 5.1a.5.5 0 00-.2.4V10h2V7a1 1 0 011-1h2a1 1 0 011 1v3h2V5.49a.5.5 0 00-.2-.4L6 2.13z' />
+        </svg>"
+                )
+            },
+            {
+                ID: 2,
+                ParentItem: 0,
+                MenuText: "Users",
+                Expanded:false,
+                SubItems:true,
+                Tab: "users",
+                Icon: "data:image/svg+xml," & EncodeUrl(
+                    "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='12' height='12' version='1.1'>
+           <path fill='#232130'
+        d='M6 1a2 2 0 100 4 2 2 0 000-4zM5 3a1 1 0 112 0 1 1 0 01-2 0z M8.5 6h-5C2.67 6 2 6.67 2 7.5c0 1.12.46 2.01 1.21 2.61.74.6 1.74.89 2.79.89s2.05-.29 2.79-.89C9.54 9.51 10 8.61 10 7.5 10 6.67 9.33 6 8.5 6zm-5 1h5c.28 0 .5.22.5.5 0 .82-.32 1.42-.84 1.83-.52.43-1.28.67-2.16.67-.88 0-1.64-.24-2.16-.67A2.25 2.25 0 013 7.5c0-.28.22-.5.5-.5z' />
+        </svg>"
+                )
+            },
+            {
+                ID: 3,
+                ParentItem: 2,
+                MenuText: "Active Users",
+                Expanded:false,
+                SubItems:false,
+                Tab: "active-users",
+                Icon: ""
+            },
+            {
+                ID: 4,
+                ParentItem: 2,
+                MenuText: "Contacts",
+                Expanded:false,
+                SubItems:false,
+                Tab: "contacts",
+                Icon: ""
+            },
+            {
+                ID: 5,
+                ParentItem: 2,
+                MenuText: "Guest users",
+                Expanded:false,
+                SubItems:false,
+                Tab: "guests",
+                Icon: ""
+            },
+            {
+                ID: 6,
+                ParentItem: 2,
+                MenuText: "Deleted users",
+                Expanded:false,
+                SubItems:false,
+                Tab: "deleted",
+                Icon: ""
+            },
+            {
+                ID: 7,
+                ParentItem: 0,
+                MenuText: "Groups",
+                Expanded:false,
+                SubItems:true,
+                Tab: "groups",
+                Icon: "data:image/svg+xml," & EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='16' height='16' version='1.1'>
+           <path fill='#232130'
+        d='M3 3a2 2 0 114 0 2 2 0 01-4 0zm2-1a1 1 0 100 2 1 1 0 000-2z M9.78 4.58a2 2 0 112.43-3.16 2 2 0 01-2.43 3.16zM11 2a1 1 0 100 2 1 1 0 000-2z M2.5 6h2.67A3 3 0 005 7H2.5a.5.5 0 00-.5.5c0 .82.32 1.42.84 1.83.23.2.52.35.84.46a2.5 2.5 0 00-.53.87 3.73 3.73 0 01-.94-.55A3.25 3.25 0 011 7.5C1 6.67 1.67 6 2.5 6z M6.27 6a2 2 0 001 2.86A2 2 0 0010 7a2 2 0 00-2-2 2 2 0 00-1.73 1zm1.5.03a1 1 0 011.2 1.2 1 1 0 11-1.2-1.2z M13.16 9.33c-.23.2-.52.35-.84.46.24.25.42.54.53.87.34-.14.66-.32.94-.55.75-.6 1.21-1.5 1.21-2.61 0-.83-.67-1.5-1.5-1.5h-2.67A3 3 0 0111 7h2.5c.28 0 .5.22.5.5 0 .82-.32 1.42-.84 1.83z M10.5 10a1.5 1.5 0 011.5 1.5c0 1.12-.46 2.01-1.21 2.61-.74.6-1.74.89-2.79.89a4.43 4.43 0 01-2.79-.89A3.25 3.25 0 014 11.5 1.5 1.5 0 015.5 10h5zm0 1h-5a.5.5 0 00-.5.5c0 .82.32 1.42.84 1.83.52.43 1.28.67 2.16.67.88 0 1.64-.24 2.16-.67.52-.4.84-1.01.84-1.83a.5.5 0 00-.5-.5z' />
+        </svg>")
+            },
+            {
+                ID: 8,
+                ParentItem: 7,
+                MenuText: "Active groups",
+                Expanded:false,
+                SubItems:false,
+                Tab: "active-users",
+                Icon: ""
+            },
+            {
+                ID: 9,
+                ParentItem: 7,
+                MenuText: "Deleted groups",
+                Expanded:false,
+                SubItems:false,
+                Tab: "contacts",
+                Icon: ""
+            },
+            {
+                ID: 10,
+                ParentItem: 7,
+                MenuText: "Shared mailboxes",
+                Expanded:false,
+                SubItems:false,
+                Tab: "guests",
+                Icon: ""
+            }
+        ));
+        
+        ClearCollect(newBuild,Filter(newMenu,ParentItem = 0));
+
+    Rectangle8 As rectangle:
+        Fill: =ColorValue(inp_BackgroundColor_home.inputValue)
+        Height: ='PP-hIconBar_1'.Height
+        Width: ='PP-hIconBar_1'.Width
+        X: =1438
+        Y: =179
+        ZIndex: =2
+
+    "'PP-hIconBar_1' As 'PP-hIconBar'":
+        Height: ='PP-hIconBar_1'.Size
+        Items: =Sort(Filter(newMenu,ParentItem=0),ID,Ascending)
+        Size: =Value(h_inpSize.Text)
+        Width: =CountRows('PP-hIconBar_1'.Items) * 'PP-hIconBar_1'.Size
+        X: =1438
+        Y: =179
+        ZIndex: =3
+
+    "'PP-OfficeRail_1' As 'PP-OfficeRail'":
+        DarkColor: =ColorValue(inp_Color_home.inputValue)
+        Fill: ='PP-OfficeRail_1'.LightColor
+        Height: =Parent.Height -con_Footer_Home_1.Height - con_Header_Home_1.Height -80
+        LightColor: =ColorValue(inp_BackgroundColor_home.inputValue)
+        MenuItems: =Sort(Filter(newMenu,ParentItem=0),ID,Ascending)
+        MenuItemSelectColour: =ColorValue(inp_Color_home.inputValue)
+        OnReset: ='PP-OfficeRail_1'.reset
+        X: =1070
+        Y: =133
+        ZIndex: =5
+
+    MicrosoftMenu As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =5
+
+        Rectangle5 As rectangle:
+            Fill: =RGBA(243, 242, 241, 1)
+            Height: =42
+            Width: =If(hideMenu,54,400)
+            X: =40
+            Y: =131
+            ZIndex: =9
+
+        gal_MSMenu As gallery.galleryVertical:
+            Default: =galDefault
+            Fill: =RGBA(243,242,241,1)
+            Height: =Parent.Height -con_Footer_Home_1.Height - con_Header_Home_1.Height -120
+            Items: =Sort(newBuild,ID,Ascending)
+            Layout: =Layout.Vertical
+            OnSelect: =
+            TemplatePadding: =0
+            TemplateSize: =42
+            Width: =If(hideMenu,54,400)
+            X: =40
+            Y: =173
+            ZIndex: =10
+
+            Rectangle4_3 As rectangle:
+                Fill: =RGBA(220,220,220,1)
+                Height: =42
+                HoverFill: =RGBA(220,220,220,1)
+                OnSelect: =Select(Parent)
+                Width: =400
+                ZIndex: =1
+
+            Button1_1 As button:
+                BorderThickness: =0
+                Color: =ColorValue(inp_Color_home.inputValue)
+                Fill: =ColorValue(inp_Color_home.inputValue)
+                Height: =20
+                OnSelect: =Select(Parent)
+                Text: =""
+                Width: =4
+                X: =8
+                Y: =10
+                ZIndex: =2
+
+            Rectangle4_2 As rectangle:
+                Fill: =If(ThisItem.IsSelected,Transparent,RGBA(243,242,241,1))
+                Height: =42
+                HoverFill: =Transparent
+                OnSelect: =Select(Parent)
+                PressedFill: =Transparent
+                Width: =400
+                ZIndex: =3
+
+            Label10_1 As label:
+                Color: =RGBA(35, 33, 48, 1)
+                Fill: =Transparent
+                Font: =Font.'Segoe UI'
+                Height: =42
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.MenuText
+                Width: =196
+                X: =51
+                ZIndex: =4
+
+            Image4_1 As image:
+                Height: =20
+                Image: =ThisItem.DarkIcon
+                OnSelect: =Select(Parent)
+                Width: =20
+                X: =18
+                Y: =10
+                ZIndex: =5
+
+            icon_Next_2 As icon.ChevronRight:
+                BorderColor: =Transparent
+                Color: =RGBA(35,33,48,1)
+                FocusedBorderThickness: =0
+                Height: =24
+                Icon: =Icon.ChevronRight
+                OnSelect: |+
+                    =If(
+                        ThisItem.Expanded = false,
+                        Patch(
+                            newBuild,
+                            ThisItem,
+                            {Expanded: true}
+                        );
+                        Collect(
+                            newBuild,
+                            Filter(
+                                newMenu,
+                                ParentItem = ThisItem.ID
+                            )
+                        ),
+                        Patch(
+                            newBuild,
+                            ThisItem,
+                            {Expanded: false}
+                        );
+                        Remove(
+                            newBuild,
+                            Filter(
+                                newMenu,
+                                ParentItem = ThisItem.ID
+                            )
+                        )
+                    );
+                    
+                    
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Rotation: =If(ThisItem.Expanded = false,90,-90)
+                Visible: =If(ThisItem.SubItems = true And gal_MSMenu.Width = 400 ,true,false)
+                Width: =28.97
+                X: =Parent.Width -39
+                Y: =10
+                ZIndex: =6
+
+        Icon6 As icon.Hamburger:
+            Color: =RGBA(33, 35, 48, 1)
+            Height: =20
+            Icon: =Icon.Hamburger
+            OnSelect: |-
+                =If(hideMenu, Set(hideMenu,false), Set(hideMenu,true); RemoveIf(newBuild, ParentItem in newMenu.ID);UpdateIf(newBuild,ID=ID, {Expanded: false}))
+            Width: =20
+            X: =59
+            Y: =141
+            ZIndex: =11
+
+    Rectangle7_1 As rectangle:
+        Fill: =ColorFade(ColorValue(inp_BackgroundColor_home.inputValue),0.5)
+        Height: =Parent.Height -con_Footer_Home_1.Height - con_Header_Home_1.Height -80
+        Width: =400
+        X: =497
+        Y: =133
+        ZIndex: =6
+
+    Rectangle7 As rectangle:
+        Fill: =ColorFade(ColorValue(inp_BackgroundColor_home.inputValue),0.5)
+        Height: =Parent.Height -con_Footer_Home_1.Height - con_Header_Home_1.Height -80
+        Width: =400
+        X: =40
+        Y: =133
+        ZIndex: =7
+
+    "'PP-MainMenu_1' As 'PP-MainMenu'":
+        DarkColor: =ColorValue(inp_Color_home.inputValue)
+        Fill: ='PP-MainMenu_1'.LightColor
+        Height: =Parent.Height -con_Footer_Home_1.Height - con_Header_Home_1.Height -80
+        LightColor: =ColorValue(inp_BackgroundColor_home.inputValue)
+        MenuItems: =Sort(Filter(newMenu,ParentItem=0),ID,Ascending)
+        OnReset: ='PP-MainMenu_1'.reset
+        Width: =If(menuHide,50,400)
+        X: =496
+        Y: =133
+        ZIndex: =8
+
+    con_Header_Home_1 As groupContainer.manualLayoutContainer:
+        DisplayMode: =DisplayMode.Edit
+        Height: =55
+        LayoutDirection: =LayoutDirection.Horizontal
+        LayoutMode: =LayoutMode.Manual
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =App.Width
+        X: =0.00
+        ZIndex: =12
+
+        "'PP-Header_2' As 'PP-Header'":
+            Logo: ='cropped-logo-red'
+            X: =0.00
+
+        Icon2_1 As icon.Reload:
+            Color: =PrimaryColor1TextValue
+            Height: =30
+            Icon: =Icon.Reload
+            OnSelect: |-
+                =Set(defaultBackgroundColor, "#E6EAF0");Set(hideMenu,true);Set(defaultIconColor,"#536596")
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =36.22
+            X: =App.Width - 50
+            Y: =12
+            ZIndex: =3
+
+    con_Footer_Home_1 As groupContainer.manualLayoutContainer:
+        DisplayMode: =DisplayMode.Edit
+        Height: =295
+        LayoutDirection: =LayoutDirection.Horizontal
+        LayoutMode: =LayoutMode.Manual
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =App.Width
+        X: =0.00
+        Y: =App.Height -295
+        ZIndex: =13
+
+        Rectangle1_1 As rectangle:
+            Fill: =PrimaryColor2Value
+            Height: =295
+            Width: =App.Width
+            X: =0.00
+            ZIndex: =1
+
+        Label2_1 As label:
+            Align: =Align.Center
+            Color: =PrimaryColor3TextValue
+            FontWeight: =FontWeight.Semibold
+            Height: =63
+            PaddingRight: =6.03
+            PaddingTop: =6.03
+            Size: =18
+            Text: ="Menu Builder"
+            Width: =110
+            ZIndex: =2
+
+        Gallery1_1 As gallery.galleryHorizontal:
+            BorderColor: =PrimaryColor3Value
+            Fill: =PrimaryColor2Value
+            Height: =293
+            Items: =Sort(newMenu,ID,Ascending)
+            ShowNavigation: =true
+            ShowScrollbar: =false
+            TemplatePadding: =6.03
+            TemplateSize: =193
+            Width: =1809
+            X: =99
+            ZIndex: =3
+
+            Rectangle6 As rectangle:
+                BorderColor: =ColorFade(ColorValue(inp_Color_home.inputValue),0.5)
+                BorderThickness: =1
+                Fill: =PrimaryColor2TextValue
+                Height: =280.94000000000005
+                OnSelect: =Select(Parent)
+                Width: =193
+                ZIndex: =1
+
+            Image1_2 As image:
+                BorderColor: =ColorValue(inp_Color_home.inputValue)
+                BorderThickness: =1
+                Fill: =ColorValue(inp_BackgroundColor_home.inputValue)
+                Height: =60
+                Image: =ThisItem.DarkIcon
+                OnSelect: =Select(Parent)
+                PaddingBottom: =5
+                PaddingLeft: =5
+                PaddingRight: =6.03
+                PaddingTop: =6.03
+                RadiusBottomLeft: =5
+                RadiusBottomRight: =5
+                RadiusTopLeft: =5
+                RadiusTopRight: =5
+                Width: =60
+                X: =19
+                Y: =30
+                ZIndex: =2
+
+            inp_Menutext_2 As text:
+                Default: =ThisItem.MenuText
+                FocusedBorderThickness: =2
+                Height: =20
+                OnSelect: =Select(Parent)
+                PaddingLeft: =5
+                PaddingTop: =6.03
+                RadiusBottomLeft: =2
+                RadiusBottomRight: =2
+                RadiusTopLeft: =2
+                RadiusTopRight: =2
+                Size: =8
+                Width: =120
+                X: =64
+                Y: =112
+                ZIndex: =3
+
+            Button4_1 As button:
+                Fill: =PrimaryColor3TextValue
+                Height: =20
+                OnSelect: |-
+                    =Patch(newMenu,ThisItem,{MenuText: inp_Menutext_2.Text,Tab: inp_Menutext_3.Text, ParentItem: Value(inp_Menutext_4.Text),SubItems:Toggle1.Value,Command:inp_Menutext_5.Text });
+                    ClearCollect(newBuild,Filter(newMenu,ParentItem=0))
+                PaddingRight: =6.03
+                PaddingTop: =6.03
+                RadiusBottomLeft: =2
+                RadiusBottomRight: =2
+                RadiusTopLeft: =2
+                RadiusTopRight: =2
+                Size: =9.66
+                Text: ="Update"
+                Width: =82.10
+                X: =55
+                Y: =254
+                ZIndex: =4
+
+            inp_Menutext_3 As text:
+                Default: =ThisItem.Tab
+                FocusedBorderThickness: =2
+                Height: =20
+                OnSelect: =Select(Parent)
+                PaddingLeft: =5
+                PaddingTop: =6.03
+                RadiusBottomLeft: =2
+                RadiusBottomRight: =2
+                RadiusTopLeft: =2
+                RadiusTopRight: =2
+                Size: =8
+                Width: =120
+                X: =64
+                Y: =136
+                ZIndex: =5
+
+            Icon4_1 As icon.CancelBadge:
+                Color: =Red
+                Height: =20
+                Icon: =Icon.CancelBadge
+                OnSelect: |-
+                    =Remove(newMenu,ThisItem);Remove(newBuild,ThisItem);
+                    ClearCollect(
+                        rowCounter,
+                        {Value: 1}
+                    );
+                    ClearCollect(
+                        tempMenu,
+                        newMenu
+                    );
+                    ForAll(
+                        tempMenu,
+                        Patch(
+                            newMenu,
+                            ThisRecord,
+                            {ID: First(rowCounter).Value}
+                        );
+                        Patch(
+                            rowCounter,
+                            First(rowCounter),
+                            {Value: First(rowCounter).Value + 1}
+                        );
+                        
+                    );
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =24.15
+                X: =160
+                Y: =254
+                ZIndex: =6
+
+            Label12 As label:
+                Align: =Align.Center
+                Height: =20
+                OnSelect: =Select(Parent)
+                PaddingLeft: =0
+                PaddingRight: =0
+                Size: =8
+                Text: |-
+                    ="MenuText:"
+                Width: =57
+                X: =4
+                Y: =112
+                ZIndex: =7
+
+            Label12_1 As label:
+                Align: =Align.Right
+                Height: =20
+                OnSelect: =Select(Parent)
+                PaddingRight: =0
+                Size: =8
+                Text: |-
+                    ="Tab:"
+                Width: =57
+                X: =4
+                Y: =136
+                ZIndex: =8
+
+            inp_Menutext_4 As text:
+                Default: =ThisItem.ParentItem
+                FocusedBorderThickness: =2
+                Height: =20
+                OnSelect: =Select(Parent)
+                PaddingLeft: =5
+                PaddingTop: =6.03
+                RadiusBottomLeft: =2
+                RadiusBottomRight: =2
+                RadiusTopLeft: =2
+                RadiusTopRight: =2
+                Size: =8
+                Width: =120
+                X: =64
+                Y: =185
+                ZIndex: =9
+
+            Label12_2 As label:
+                Align: =Align.Right
+                Height: =20
+                OnSelect: =Select(Parent)
+                PaddingRight: =0
+                Size: =8
+                Text: |-
+                    ="Parent:"
+                Width: =53
+                X: =8
+                Y: =185
+                ZIndex: =10
+
+            Label12_4 As label:
+                Align: =Align.Center
+                Height: =17
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.ID
+                Width: =54
+                X: =74
+                Y: =8
+                ZIndex: =13
+
+            Icon7 As icon.NextArrow:
+                Height: =20
+                Icon: =Icon.NextArrow
+                OnSelect: |-
+                    =If(
+                        ThisItem.ID = CountRows(newMenu),
+                        false,
+                        Patch(
+                            newMenu,
+                            LookUp(
+                                newMenu,
+                                ID = ThisItem.ID + 1
+                            ),
+                            {
+                                ID: LookUp(
+                                    newMenu,
+                                    ID = ThisItem.ID + 1
+                                ).ID - 1
+                            }
+                        );
+                        Patch(
+                            newMenu,
+                            ThisItem,
+                            {ID: ThisItem.ID + 1}
+                        )
+                    );
+                    ClearCollect(newBuild,Filter(newMenu,ParentItem = 0))
+                Visible: =If(ThisItem.ID = CountRows(newMenu),false,true)
+                Width: =24
+                X: =165
+                Y: =2
+                ZIndex: =14
+
+            Icon8 As icon.BackArrow:
+                Height: =20
+                Icon: =Icon.BackArrow
+                OnSelect: |-
+                    =If(
+                        ThisItem.ID = 1,
+                        false,
+                        Patch(
+                            newMenu,
+                            LookUp(
+                                newMenu,
+                                ID = ThisItem.ID - 1
+                            ),
+                            {
+                                ID: LookUp(
+                                    newMenu,
+                                    ID = ThisItem.ID - 1
+                                ).ID + 1
+                            }
+                        );
+                        Patch(
+                            newMenu,
+                            ThisItem,
+                            {ID: ThisItem.ID - 1}
+                        )
+                    );ClearCollect(newBuild,Filter(newMenu,ParentItem = 0))
+                Visible: =If(ThisItem.ID = 1,false,true)
+                Width: =23
+                X: =2
+                Y: =2
+                ZIndex: =15
+
+            Label12_3 As label:
+                Align: =Align.Right
+                Height: =20
+                OnSelect: =Select(Parent)
+                Size: =8
+                Text: ="SubItems"
+                Width: =60
+                X: =4
+                Y: =219
+                ZIndex: =16
+
+            Toggle1 As toggleSwitch:
+                Default: =ThisItem.SubItems
+                FalseText: ="false"
+                Height: =20
+                OnSelect: =Select(Parent)
+                Size: =9
+                TrueText: ="true"
+                X: =63
+                Y: =219
+                ZIndex: =17
+
+            Image1_3 As image:
+                Fill: =ColorValue(inp_Color_home.inputValue)
+                Height: =60
+                Image: =ThisItem.Icon
+                OnSelect: =Select(Parent)
+                PaddingBottom: =5
+                PaddingLeft: =5
+                PaddingRight: =6.03
+                PaddingTop: =6.03
+                RadiusBottomLeft: =5
+                RadiusBottomRight: =5
+                RadiusTopLeft: =5
+                RadiusTopRight: =5
+                Width: =60
+                X: =121
+                Y: =30
+                ZIndex: =18
+
+            Label12_5 As label:
+                Align: =Align.Center
+                Height: =20
+                OnSelect: =Select(Parent)
+                Size: =9
+                Text: ="Icon"
+                Width: =65
+                X: =14
+                Y: =90
+                ZIndex: =19
+
+            Label12_6 As label:
+                Align: =Align.Center
+                Height: =20
+                OnSelect: =Select(Parent)
+                Size: =9
+                Text: ="Selected"
+                Width: =71
+                X: =115
+                Y: =90
+                ZIndex: =20
+
+            Icon4_2 As icon.CancelBadge:
+                Color: =Red
+                Height: =20
+                Icon: =Icon.CancelBadge
+                OnSelect: |-
+                    =Update(newMenu,ThisItem,{ID:ThisItem.ID,Icon: "",DarkIcon: "",MenuText:ThisItem.MenuText,Tab:ThisItem.Tab,SubItems:ThisItem.SubItems,ParentItem:ThisItem.ParentItem});
+                    ClearCollect(newBuild,Filter(newMenu,ParentItem=0))
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =24.15
+                X: =89
+                Y: =44
+                ZIndex: =21
+
+            inp_Menutext_5 As text:
+                Default: =ThisItem.Command
+                FocusedBorderThickness: =2
+                Height: =20
+                OnSelect: =Select(Parent)
+                PaddingLeft: =5
+                PaddingTop: =6.03
+                RadiusBottomLeft: =2
+                RadiusBottomRight: =2
+                RadiusTopLeft: =2
+                RadiusTopRight: =2
+                Size: =8
+                Width: =120
+                X: =64
+                Y: =160
+                ZIndex: =22
+
+            Label12_7 As label:
+                Align: =Align.Right
+                Height: =20
+                OnSelect: =Select(Parent)
+                PaddingRight: =0
+                Size: =8
+                Text: |-
+                    ="Screen:"
+                Width: =60
+                X: =1
+                Y: =160
+                ZIndex: =23
+
+        Arrow1 As arrow.backArrow:
+            Fill: =PrimaryColor1TextValue
+            Height: =40
+            OnSelect: =Navigate(Home,ScreenTransition.Fade)
+            Width: =40
+            X: =35
+            Y: =239
+            ZIndex: =7
+
+        Icon12 As icon.Add:
+            Color: =PrimaryColor1TextValue
+            Height: =48
+            Icon: =Icon.Add
+            OnSelect: |-
+                =Collect(newMenu,{ID: CountRows(newMenu)+1,MenuText:""})
+            Width: =48
+            X: =31
+            Y: =175
+            ZIndex: =8
+
+    Icon6_1 As icon.Hamburger:
+        Color: =ColorValue(inp_Color_home.inputValue)
+        Height: =26
+        Icon: =Icon.Hamburger
+        OnSelect: =If(menuHide, Set(menuHide,false), Set(menuHide,true))
+        Width: =26
+        X: =509
+        Y: =135
+        ZIndex: =14
+
+    "'PP-TeamsRail_1' As 'PP-TeamsRail'":
+        DarkColor: =ColorValue(inp_Color_home.inputValue)
+        Fill: ='PP-TeamsRail_1'.LightColor
+        Height: =Parent.Height -con_Footer_Home_1.Height - con_Header_Home_1.Height -80
+        LightColor: =ColorValue(inp_BackgroundColor_home.inputValue)
+        MenuItems: =Sort(Filter(newMenu,ParentItem=0),ID,Ascending)
+        OnReset: ='PP-TeamsRail_1'.reset
+        X: =936
+        Y: =133
+        ZIndex: =22
+
+    Icon10 As icon.Download:
+        Color: =PrimaryColor1TextValue
+        Height: =41
+        Icon: =Icon.Download
+        OnSelect: =
+        Visible: =false
+        Width: =61
+        X: =App.Width -65
+        Y: =gal_MSMenu.Y+gal_MSMenu.Height -40
+        ZIndex: =48
+
+    Gallery2_1 As gallery.galleryHorizontal:
+        Height: =CountRows(Filter(newMenu,ParentItem=0))*60
+        Items: =Sort(Filter(newMenu,ParentItem=0),ID,Ascending)
+        ShowScrollbar: =false
+        TemplateSize: =56
+        Width: =65
+        WrapCount: =CountRows(newMenu)
+        X: =1327
+        Y: =173
+        ZIndex: =50
+
+        Circle3_1 As circle:
+            Fill: =If(ThisItem.IsSelected, ColorFade( ColorValue(inp_Color_home.inputValue),0.8),ColorValue(inp_BackgroundColor_home.inputValue))
+            Height: =54
+            HoverFill: =ColorFade( ColorValue(inp_Color_home.inputValue),0.8)
+            OnSelect: =Select(Parent)
+            Width: =55
+            ZIndex: =1
+
+        Image3_1 As image:
+            Height: =32
+            Image: =ThisItem.DarkIcon
+            OnSelect: =Select(Parent)
+            Width: =32
+            X: =11
+            Y: =11
+            ZIndex: =3
+
+    Label3_1 As label:
+        Align: =Align.Right
+        Color: =PrimaryColor1TextValue
+        Text: |-
+            ="Reset Colors:"
+        X: =App.Width - 200
+        Y: =7
+        ZIndex: =52
+
+    LabelsInputs As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =52
+
+        Label13 As label:
+            Color: =RGBA(33, 35, 48, 1)
+            FontWeight: =FontWeight.Semibold
+            Text: ="Two Level Expanding Menu"
+            Width: =345
+            X: =95
+            Y: =133
+            ZIndex: =15
+
+        Label13_1 As label:
+            Color: =RGBA(33, 35, 48, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            Text: ="Single Level light/dark Menu"
+            Width: =345
+            X: =552
+            Y: =133
+            ZIndex: =16
+
+        Label14 As label:
+            Align: =Align.Right
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Text: |-
+                ="VarSelectedItem:"
+            Width: =143
+            X: =40
+            Y: =gal_MSMenu.Y+gal_MSMenu.Height -70
+            ZIndex: =17
+
+        Label14_1 As label:
+            Align: =Align.Center
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            PaddingLeft: =0
+            PaddingRight: =0
+            Text: |-
+                ="VarSelectedItem:"
+            Width: =153
+            X: =497
+            Y: =gal_MSMenu.Y+gal_MSMenu.Height -70
+            ZIndex: =18
+
+        Label14_2 As label:
+            Font: =Font.'Segoe UI'
+            Text: =gal_MSMenu.Selected.MenuText
+            Width: =257
+            X: =183
+            Y: =gal_MSMenu.Y+gal_MSMenu.Height -70
+            ZIndex: =19
+
+        Label14_3 As label:
+            Font: =Font.'Segoe UI'
+            Text: ='PP-MainMenu_1'.VarSelectedItem
+            Width: =247
+            X: =650
+            Y: =gal_MSMenu.Y+gal_MSMenu.Height -70
+            ZIndex: =20
+
+        Label13_2 As label:
+            Align: =Align.Center
+            Color: =RGBA(33, 35, 48, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =32
+            Text: ="Rail One"
+            Width: =114
+            X: =920
+            Y: =104
+            ZIndex: =21
+
+        Label14_4 As label:
+            Align: =Align.Center
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Text: ="Output"
+            Width: =80
+            X: =937
+            Y: =gal_MSMenu.Y+gal_MSMenu.Height -70
+            ZIndex: =23
+
+        Label14_5 As label:
+            Align: =Align.Center
+            Font: =Font.'Segoe UI'
+            Size: =10
+            Text: ='PP-TeamsRail_1'.VarSelectedItem
+            Width: =112
+            X: =922
+            Y: =gal_MSMenu.Y+gal_MSMenu.Height -40
+            ZIndex: =24
+
+        Label13_3 As label:
+            Align: =Align.Center
+            Color: =RGBA(33, 35, 48, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =26
+            Text: ="Rail Two"
+            Width: =117
+            X: =1054
+            Y: =107
+            ZIndex: =25
+
+        Label14_6 As label:
+            Align: =Align.Center
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Text: ="Output"
+            Width: =80
+            X: =1070
+            Y: =gal_MSMenu.Y+gal_MSMenu.Height -70
+            ZIndex: =26
+
+        Label14_7 As label:
+            Align: =Align.Center
+            Font: =Font.'Segoe UI'
+            Size: =10
+            Text: ='PP-OfficeRail_1'.VarSelectedItem
+            Width: =101
+            X: =1058
+            Y: =gal_MSMenu.Y+gal_MSMenu.Height -40
+            ZIndex: =27
+
+        Label13_4 As label:
+            Align: =Align.Center
+            Color: =RGBA(33, 35, 48, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =51
+            Text: ="v-IconBar"
+            Width: =95
+            X: =1187
+            Y: =94
+            ZIndex: =28
+
+        Label13_5 As label:
+            Align: =Align.Center
+            Color: =RGBA(33, 35, 48, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =51
+            Text: ="h-IconBar"
+            Width: =104
+            X: =1426
+            Y: =94
+            ZIndex: =29
+
+        inp_vSize As text:
+            Align: =Align.Center
+            Default: ="50"
+            Format: =TextFormat.Number
+            Height: =28
+            HintText: ="Size in px"
+            Width: =61
+            X: =1203
+            Y: =141
+            ZIndex: =30
+
+        h_inpSize As text:
+            Default: ="50"
+            Format: =TextFormat.Number
+            Height: =27
+            HintText: ="Size in px"
+            Width: =59
+            X: =1436
+            Y: =141
+            ZIndex: =31
+
+        Label13_6 As label:
+            Align: =Align.Center
+            Color: =RGBA(33, 35, 48, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =21
+            Size: =8
+            Text: ="Enter Size"
+            Width: =62
+            X: =1202
+            Y: =124
+            ZIndex: =32
+
+        Label14_8 As label:
+            Align: =Align.Center
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Text: ="Output"
+            Width: =80
+            X: =1260
+            Y: =136
+            ZIndex: =33
+
+        Label14_9 As label:
+            Font: =Font.'Segoe UI'
+            Height: =29
+            Size: =10
+            Text: ='PP-vIconBar_1'.VarSelectedItem
+            Width: =44
+            X: =1333
+            Y: =142
+            ZIndex: =34
+
+        Label14_10 As label:
+            Align: =Align.Center
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            Text: ="Output"
+            Width: =80
+            X: =1487
+            Y: =140
+            ZIndex: =35
+
+        Label14_11 As label:
+            Font: =Font.'Segoe UI'
+            Height: =27
+            Size: =10
+            Text: ='PP-hIconBar_1'.VarSelectedItem
+            Width: =46
+            X: =1567
+            Y: =143
+            ZIndex: =36
+
+        Label14_12 As label:
+            Align: =Align.Right
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Text: |-
+                ="VarSelectedID:"
+            Width: =143
+            X: =40
+            Y: =gal_MSMenu.Y+gal_MSMenu.Height -40
+            ZIndex: =37
+
+        Label14_13 As label:
+            Font: =Font.'Segoe UI'
+            Text: =gal_MSMenu.Selected.ID
+            Width: =186
+            X: =183
+            Y: =gal_MSMenu.Y+gal_MSMenu.Height -40
+            ZIndex: =38
+
+        Label13_7 As label:
+            Color: =RGBA(33, 35, 48, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =21
+            Size: =8
+            Text: ="Enter Size"
+            Width: =69
+            X: =1433
+            Y: =124
+            ZIndex: =39
+
+        input_CollectionName As text:
+            Default: ="col_MenuItems"
+            X: =315
+            Y: =74
+            ZIndex: =40
+
+        Label6 As label:
+            Color: =ColorValue(inp_Color_home.inputValue)
+            Height: =29
+            Size: =defaultTextHeaderFontSize
+            Text: |-
+                ="Menu Collection Name:"
+            Width: =301
+            X: =40
+            Y: =78
+            ZIndex: =41
+
+        Button5_6 As button:
+            BorderThickness: =1
+            Fill: =ColorValue(inp_Color_home.inputValue)
+            Height: =30
+            HoverFill: =ColorFade(ColorValue(inp_Color_home.inputValue), 0.2)
+            OnSelect: =Set(showCollection,true)
+            RadiusBottomLeft: =2
+            RadiusBottomRight: =2
+            RadiusTopLeft: =2
+            RadiusTopRight: =2
+            Size: =11
+            Text: ="Create"
+            Width: =80
+            X: =649
+            Y: =79
+            ZIndex: =42
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =55
+
+        Rectangle8_1 As rectangle:
+            Fill: =ColorFade(ColorValue(inp_Color_home.inputValue),0.8)
+            Height: ='PP-vIconBar_1'.Height
+            Width: ='PP-vIconBar_1'.Size
+            X: =1209
+            Y: =179
+            ZIndex: =1
+
+        "'PP-vIconBar_1' As 'PP-vIconBar'":
+            Height: =CountRows('PP-vIconBar_1'.Items) * 'PP-vIconBar_1'.Size
+            Items: =Sort(Filter(newMenu,ParentItem=0),ID,Ascending)
+            Size: =Value(inp_vSize.Text)
+            Width: ='PP-vIconBar_1'.Size
+            X: =1209
+            Y: =179
+            ZIndex: =4
+
+    old_overlay_1 As group:
+        Height: =5
+        Width: =5
+        X: =-360
+        Y: =40
+        ZIndex: =67
+
+        Rectangle2_1 As rectangle:
+            Fill: =PrimaryColor3Value
+            Height: =App.Height -con_Footer_Home_1.Height -con_Header_Home_1.Height
+            Visible: =showCollection
+            Width: =App.Width
+            Y: =56
+            ZIndex: =43
+
+        Label4_1 As label:
+            Color: =PrimaryColor1TextValue
+            Height: =34
+            PaddingRight: =6.03
+            PaddingTop: =6.03
+            Size: =15.69
+            Text: ="Menu Collection"
+            Visible: =showCollection
+            Width: =181
+            Y: =56
+            ZIndex: =45
+
+        PCFCopyTextComponent1_1 As PCFCopyTextComponent:
+            ButtonBackgroundColor: ="RGBA(19, 163, 201, 1)"
+            ButtonBorderColor: ="RGBA(0,0,0,0)"
+            ButtonBorderRadius: =2
+            ButtonBorderThickness: =1
+            ButtonFontSize: |
+                =18
+            ButtonFontWeight: ="Bold"
+            DisplayMode: =DisplayMode.Edit
+            Height: =30
+            InputBackgroundColor: ="RGBA(0,0,0,0)"
+            InputBorderColor: ="RGBA(0,0,0,0)"
+            InputBorderRadius: =0
+            InputBorderThickness: =0
+            InputColor: ="RGBA(0,0,0,0)"
+            InputFontSize: =4
+            InputFontWeight: ="Bold"
+            MaxLength: =10000
+            MultiLine: =true
+            ReadOnly: =true
+            Value: =lbl_Collection_Output
+            Visible: =showCollection
+            Width: =168
+            X: =40
+            Y: =gal_MSMenu.Y+gal_MSMenu.Height -48
+            ZIndex: =46
+
+        Label4_8 As label:
+            Color: =PrimaryColor1TextValue
+            Height: =34
+            PaddingRight: =6.03
+            PaddingTop: =6.03
+            Size: =15.69
+            Text: ="to clipboard"
+            Visible: =showCollection
+            Width: =145
+            X: =208
+            Y: =gal_MSMenu.Y+gal_MSMenu.Height -40
+            ZIndex: =47
+
+        Button3_3 As button:
+            BorderThickness: =0
+            Color: =ColorValue(inp_BackgroundColor_home.inputValue)
+            Fill: =PrimaryColor1Value
+            FontWeight: =FontWeight.Bold
+            Height: =45
+            OnSelect: =Set(showCollection,false);
+            PaddingRight: =6.03
+            RadiusBottomLeft: =2
+            RadiusBottomRight: =2
+            RadiusTopLeft: =2
+            RadiusTopRight: =2
+            Size: =18.11
+            Text: ="Cancel"
+            Visible: =showCollection
+            Width: =102
+            X: =20
+            Y: =gal_MSMenu.Y+gal_MSMenu.Height -48
+            ZIndex: =49
+
+        lbl_Collection_Output As label:
+            Color: =PrimaryColor2Value
+            Fill: =PrimaryColor2TextValue
+            Height: =Parent.Height -con_Footer_Home_1.Height - con_Header_Home_1.Height -100
+            Overflow: =Overflow.Scroll
+            Text: |-
+                ="ClearCollect(
+                    " & input_CollectionName.Text & ",
+                    " & Concat(
+                    newMenu,
+                    "{
+                        ID: "& ID & ",
+                        MenuText: """ & MenuText & """,
+                        Tab: """ & Tab & """,
+                        ParentItem: " & ParentItem & ",
+                        SubItems: " & SubItems & ",
+                        Icon: """ & Icon & """,
+                        DarkIcon: """ & DarkIcon & """,
+                        Screen: """ & Command & """
+                    }",
+                    ","
+                ) & "
+                );"
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =showCollection
+            Width: |
+                =App.Width -40
+            Wrap: =false
+            X: =20
+            Y: =101
+            ZIndex: =51
+

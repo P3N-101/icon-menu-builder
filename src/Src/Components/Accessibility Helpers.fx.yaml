@@ -1,0 +1,30 @@
+"'Accessibility Helpers' As CanvasComponent":
+    GetLuminance(R As Number, G As Number, B As Number):
+        R:
+            Default: =100
+        G:
+            Default: =100
+        B:
+            Default: =100
+        ThisProperty:
+            Default: =Sum(('Accessibility Helpers'.sRGBtoLin(R)* 0.2126)  +  ('Accessibility Helpers'.sRGBtoLin(G) * 0.7152) + ('Accessibility Helpers'.sRGBtoLin(B)*0.0722))
+    sRGBtoLin(colorChannel As Number):
+        colorChannel:
+            Default: =100
+        ThisProperty:
+            Default: |-
+                =If(
+                    Sum(colorChannel / 255) <= 0.03928,
+                    Sum(colorChannel / 255) / 12.92,
+                    Power(
+                        ((Sum(colorChannel / 255) + 0.055) / 1.055),
+                        2.4
+                    )
+                )
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+

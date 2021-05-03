@@ -1,0 +1,42 @@
+{
+  "2a26db54-4005-4dc0-ae4d-82c2d61f5f92": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_office365users/connections/e3b4897d617c4f24a01e95a12bad036a",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1460/1.0.1460.2389/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "2a26db54-4005-4dc0-ae4d-82c2d61f5f92"
+  },
+  "f383c7c8-31da-4f03-a987-89cc487b181c": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_powerappsforappmakers/connections/f89cccfd208e43aeb24bfec3adfc47ec",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Power Apps for Makers",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1462/1.0.1462.2398/powerappsforappmakers/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_powerappsforappmakers",
+      "parameterHints": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "PowerAppsforMakers"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "f383c7c8-31da-4f03-a987-89cc487b181c"
+  }
+}
