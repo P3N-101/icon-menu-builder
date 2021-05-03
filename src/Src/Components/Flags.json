@@ -6,25 +6,16 @@
     "AllowCustomization": true,
     "Description": "",
     "Name": "Flags",
-    "TemplateGuid": "16f5f16c62bf493e85cca112a42d3405"
+    "TemplateGuid": "251d3182c5f14ebda0954caccc8061c6"
   },
   "ComponentType": "CanvasComponent",
   "CustomGroupControlTemplateName": "",
   "CustomProperties": [
     {
       "Category": 0,
-      "DisplayName": "DarkColor",
-      "Hidden": false,
-      "Name": "DarkColor",
-      "PropertyDataTypeKey": "String",
-      "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
-    },
-    {
-      "Category": 0,
-      "DisplayName": "Icons",
+      "DisplayName": "Flags",
       "Hidden": true,
-      "Name": "Icons",
+      "Name": "Flags",
       "PropertyDataTypeKey": "Table",
       "Tooltip": "A custom property",
       "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"Image\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Name\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
@@ -36,9 +27,8 @@
   "IsComponentTemplate": true,
   "IsCustomGroupControlTemplate": false,
   "IsPremiumPcfControl": false,
-  "LastModifiedTimestamp": "637555323086000740",
-  "Name": "16f5f16c62bf493e85cca112a42d3405",
+  "LastModifiedTimestamp": "637556288122326073",
+  "Name": "251d3182c5f14ebda0954caccc8061c6",
   "OverridableProperties": {},
-  "TemplateOriginalName": "bc043c221feb4caa8b684e390b4b1f34",
-  "Version": "637555320226382880"
+  "Version": "637556348636870910"
 }

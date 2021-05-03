@@ -67,7 +67,7 @@
     "EnableInstrumentation": false,
     "ErrorCount": 0,
     "FileID": "7a49eb02-625f-4bc4-9b2d-9d1c7054dd77",
-    "Id": "bf2c6df1-1a29-4163-bfd2-dd70e0d73dcf",
+    "Id": "987c0927-ab3e-4d2d-8fa7-6d4c35d3bd2c",
     "InstrumentationKey": "",
     "Name": "Icon+Menu+Builder.msapp",
     "OriginatingVersion": "1.302"
@@ -85,6 +85,7 @@
   },
   "ScreenOrder": [
     "Home",
-    "Menu Builder"
+    "Menu Builder",
+    "Screen1"
   ]
 }

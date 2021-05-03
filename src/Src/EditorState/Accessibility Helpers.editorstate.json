@@ -11,7 +11,14 @@
       "GetLuminance_R",
       "GetLuminance_G",
       "GetLuminance_B",
-      "GetLuminance",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "Sum(('Accessibility Helpers'.sRGBtoLin(R)* 0.2126)  +  ('Accessibility Helpers'.sRGBtoLin(G) * 0.7152) + ('Accessibility Helpers'.sRGBtoLin(B)*0.0722))",
+        "InvariantPropertyName": "GetLuminance",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
@@ -52,7 +59,7 @@
       {
         "Category": "Data",
         "PropertyName": "GetLuminance",
-        "RuleProviderType": "System"
+        "RuleProviderType": "Unknown"
       },
       {
         "Category": "Data",

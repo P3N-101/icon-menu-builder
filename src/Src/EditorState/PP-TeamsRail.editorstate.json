@@ -90,7 +90,23 @@
       },
       "ZIndex",
       "Default",
-      "FocusedBorderThickness"
+      "FocusedBorderThickness",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "\"\"",
+        "InvariantPropertyName": "AccessibleLabel",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "-1",
+        "InvariantPropertyName": "TabIndex",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      }
     ],
     "GalleryTemplateChildName": "galleryTemplate4_2",
     "HasDynamicProperties": false,
@@ -119,6 +135,11 @@
       {
         "Category": "Data",
         "PropertyName": "Items",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "AccessibleLabel",
         "RuleProviderType": "Unknown"
       },
       {
@@ -234,6 +255,11 @@
       {
         "Category": "Design",
         "PropertyName": "FocusedBorderThickness",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "TabIndex",
         "RuleProviderType": "Unknown"
       }
     ],

@@ -18,7 +18,7 @@
       "Name": "GetLuminance",
       "PropertyDataTypeKey": "Number",
       "PropertyScopeKey": {
-        "PropertyScopeRuleNamespaceKey": "31",
+        "PropertyScopeRuleNamespaceKey": "22",
         "PropertyScopeRulesKey": [
           {
             "DisplayName": "GetLuminance_R",
@@ -77,7 +77,7 @@
       "Name": "sRGBtoLin",
       "PropertyDataTypeKey": "Number",
       "PropertyScopeKey": {
-        "PropertyScopeRuleNamespaceKey": "31",
+        "PropertyScopeRuleNamespaceKey": "22",
         "PropertyScopeRulesKey": [
           {
             "DisplayName": "sRGBtoLin_colorChannel",
@@ -106,9 +106,9 @@
   "IsComponentTemplate": true,
   "IsCustomGroupControlTemplate": false,
   "IsPremiumPcfControl": false,
-  "LastModifiedTimestamp": "637555323085986352",
+  "LastModifiedTimestamp": "637556288122212525",
   "Name": "6fda9d5d46344732b503488ec8d08939",
   "OverridableProperties": {},
   "TemplateOriginalName": "ce6aaab41aa34dada80390b2fa9447af",
-  "Version": "637555320226376739"
+  "Version": "637556348636865231"
 }

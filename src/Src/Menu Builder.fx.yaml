@@ -120,7 +120,7 @@
             }
         ));
         
-        ClearCollect(newBuild,Filter(newMenu,ParentItem = 0));
+        ClearCollect(menu,Filter(newMenu,ParentItem = 0));
 
     Rectangle8 As rectangle:
         Fill: =ColorValue(inp_BackgroundColor_home.inputValue)
@@ -170,7 +170,7 @@
             Default: =galDefault
             Fill: =RGBA(243,242,241,1)
             Height: =Parent.Height -con_Footer_Home_1.Height - con_Header_Home_1.Height -120
-            Items: =Sort(newBuild,ID,Ascending)
+            Items: =Sort(menu,ID,Ascending)
             Layout: =Layout.Vertical
             OnSelect: =
             TemplatePadding: =0
@@ -192,7 +192,7 @@
                 BorderThickness: =0
                 Color: =ColorValue(inp_Color_home.inputValue)
                 Fill: =ColorValue(inp_Color_home.inputValue)
-                Height: =20
+                Height: =22
                 OnSelect: =Select(Parent)
                 Text: =""
                 Width: =4
@@ -221,12 +221,16 @@
                 ZIndex: =4
 
             Image4_1 As image:
-                Height: =20
+                Height: =26
                 Image: =ThisItem.DarkIcon
                 OnSelect: =Select(Parent)
-                Width: =20
+                PaddingBottom: =2
+                PaddingLeft: =2
+                PaddingRight: =2
+                PaddingTop: =2
+                Width: =26
                 X: =18
-                Y: =10
+                Y: =8
                 ZIndex: =5
 
             icon_Next_2 As icon.ChevronRight:
@@ -239,24 +243,24 @@
                     =If(
                         ThisItem.Expanded = false,
                         Patch(
-                            newBuild,
+                            menu,
                             ThisItem,
                             {Expanded: true}
                         );
                         Collect(
-                            newBuild,
+                            menu,
                             Filter(
                                 newMenu,
                                 ParentItem = ThisItem.ID
                             )
                         ),
                         Patch(
-                            newBuild,
+                            menu,
                             ThisItem,
                             {Expanded: false}
                         );
                         Remove(
-                            newBuild,
+                            menu,
                             Filter(
                                 newMenu,
                                 ParentItem = ThisItem.ID
@@ -279,7 +283,7 @@
             Height: =20
             Icon: =Icon.Hamburger
             OnSelect: |-
-                =If(hideMenu, Set(hideMenu,false), Set(hideMenu,true); RemoveIf(newBuild, ParentItem in newMenu.ID);UpdateIf(newBuild,ID=ID, {Expanded: false}))
+                =If(hideMenu, Set(hideMenu,false), Set(hideMenu,true); RemoveIf(menu, ParentItem in newMenu.ID);UpdateIf(menu,ID=ID, {Expanded: false}))
             Width: =20
             X: =59
             Y: =141
@@ -381,7 +385,7 @@
             ShowScrollbar: =false
             TemplatePadding: =6.03
             TemplateSize: =193
-            Width: =1809
+            Width: =App.Width -100
             X: =99
             ZIndex: =3
 
@@ -415,6 +419,8 @@
                 ZIndex: =2
 
             inp_Menutext_2 As text:
+                BorderThickness: =1
+                Color: =ColorValue(inp_Color_home.inputValue)
                 Default: =ThisItem.MenuText
                 FocusedBorderThickness: =2
                 Height: =20
@@ -436,7 +442,7 @@
                 Height: =20
                 OnSelect: |-
                     =Patch(newMenu,ThisItem,{MenuText: inp_Menutext_2.Text,Tab: inp_Menutext_3.Text, ParentItem: Value(inp_Menutext_4.Text),SubItems:Toggle1.Value,Command:inp_Menutext_5.Text });
-                    ClearCollect(newBuild,Filter(newMenu,ParentItem=0))
+                    ClearCollect(menu,Filter(newMenu,ParentItem=0))
                 PaddingRight: =6.03
                 PaddingTop: =6.03
                 RadiusBottomLeft: =2
@@ -451,6 +457,8 @@
                 ZIndex: =4
 
             inp_Menutext_3 As text:
+                BorderThickness: =1
+                Color: =ColorValue(inp_Color_home.inputValue)
                 Default: =ThisItem.Tab
                 FocusedBorderThickness: =2
                 Height: =20
@@ -472,7 +480,7 @@
                 Height: =20
                 Icon: =Icon.CancelBadge
                 OnSelect: |-
-                    =Remove(newMenu,ThisItem);Remove(newBuild,ThisItem);
+                    =Remove(newMenu,ThisItem);Remove(menu,ThisItem);
                     ClearCollect(
                         rowCounter,
                         {Value: 1}
@@ -530,6 +538,8 @@
                 ZIndex: =8
 
             inp_Menutext_4 As text:
+                BorderThickness: =1
+                Color: =ColorValue(inp_Color_home.inputValue)
                 Default: =ThisItem.ParentItem
                 FocusedBorderThickness: =2
                 Height: =20
@@ -595,7 +605,7 @@
                             {ID: ThisItem.ID + 1}
                         )
                     );
-                    ClearCollect(newBuild,Filter(newMenu,ParentItem = 0))
+                    ClearCollect(menu,Filter(newMenu,ParentItem = 0))
                 Visible: =If(ThisItem.ID = CountRows(newMenu),false,true)
                 Width: =24
                 X: =165
@@ -627,7 +637,7 @@
                             ThisItem,
                             {ID: ThisItem.ID - 1}
                         )
-                    );ClearCollect(newBuild,Filter(newMenu,ParentItem = 0))
+                    );ClearCollect(menu,Filter(newMenu,ParentItem = 0))
                 Visible: =If(ThisItem.ID = 1,false,true)
                 Width: =23
                 X: =2
@@ -675,7 +685,6 @@
                 ZIndex: =18
 
             Label12_5 As label:
-                Align: =Align.Center
                 Height: =20
                 OnSelect: =Select(Parent)
                 Size: =9
@@ -686,7 +695,6 @@
                 ZIndex: =19
 
             Label12_6 As label:
-                Align: =Align.Center
                 Height: =20
                 OnSelect: =Select(Parent)
                 Size: =9
@@ -702,7 +710,7 @@
                 Icon: =Icon.CancelBadge
                 OnSelect: |-
                     =Update(newMenu,ThisItem,{ID:ThisItem.ID,Icon: "",DarkIcon: "",MenuText:ThisItem.MenuText,Tab:ThisItem.Tab,SubItems:ThisItem.SubItems,ParentItem:ThisItem.ParentItem});
-                    ClearCollect(newBuild,Filter(newMenu,ParentItem=0))
+                    ClearCollect(menu,Filter(newMenu,ParentItem=0))
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Width: =24.15
@@ -711,6 +719,8 @@
                 ZIndex: =21
 
             inp_Menutext_5 As text:
+                BorderThickness: =1
+                Color: =ColorValue(inp_Color_home.inputValue)
                 Default: =ThisItem.Command
                 FocusedBorderThickness: =2
                 Height: =20
@@ -798,7 +808,7 @@
         ShowScrollbar: =false
         TemplateSize: =56
         Width: =65
-        WrapCount: =CountRows(newMenu)
+        WrapCount: =CountRows(Filter(newMenu,ParentItem=0))
         X: =1327
         Y: =173
         ZIndex: =50
@@ -1133,130 +1143,11 @@
             ZIndex: =1
 
         "'PP-vIconBar_1' As 'PP-vIconBar'":
-            Height: =CountRows('PP-vIconBar_1'.Items) * 'PP-vIconBar_1'.Size
+            Height: =CountRows('PP-vIconBar_1'.Items) * 'PP-vIconBar_1'.Size+10
             Items: =Sort(Filter(newMenu,ParentItem=0),ID,Ascending)
             Size: =Value(inp_vSize.Text)
             Width: ='PP-vIconBar_1'.Size
             X: =1209
             Y: =179
             ZIndex: =4
-
-    old_overlay_1 As group:
-        Height: =5
-        Width: =5
-        X: =-360
-        Y: =40
-        ZIndex: =67
-
-        Rectangle2_1 As rectangle:
-            Fill: =PrimaryColor3Value
-            Height: =App.Height -con_Footer_Home_1.Height -con_Header_Home_1.Height
-            Visible: =showCollection
-            Width: =App.Width
-            Y: =56
-            ZIndex: =43
-
-        Label4_1 As label:
-            Color: =PrimaryColor1TextValue
-            Height: =34
-            PaddingRight: =6.03
-            PaddingTop: =6.03
-            Size: =15.69
-            Text: ="Menu Collection"
-            Visible: =showCollection
-            Width: =181
-            Y: =56
-            ZIndex: =45
-
-        PCFCopyTextComponent1_1 As PCFCopyTextComponent:
-            ButtonBackgroundColor: ="RGBA(19, 163, 201, 1)"
-            ButtonBorderColor: ="RGBA(0,0,0,0)"
-            ButtonBorderRadius: =2
-            ButtonBorderThickness: =1
-            ButtonFontSize: |
-                =18
-            ButtonFontWeight: ="Bold"
-            DisplayMode: =DisplayMode.Edit
-            Height: =30
-            InputBackgroundColor: ="RGBA(0,0,0,0)"
-            InputBorderColor: ="RGBA(0,0,0,0)"
-            InputBorderRadius: =0
-            InputBorderThickness: =0
-            InputColor: ="RGBA(0,0,0,0)"
-            InputFontSize: =4
-            InputFontWeight: ="Bold"
-            MaxLength: =10000
-            MultiLine: =true
-            ReadOnly: =true
-            Value: =lbl_Collection_Output
-            Visible: =showCollection
-            Width: =168
-            X: =40
-            Y: =gal_MSMenu.Y+gal_MSMenu.Height -48
-            ZIndex: =46
-
-        Label4_8 As label:
-            Color: =PrimaryColor1TextValue
-            Height: =34
-            PaddingRight: =6.03
-            PaddingTop: =6.03
-            Size: =15.69
-            Text: ="to clipboard"
-            Visible: =showCollection
-            Width: =145
-            X: =208
-            Y: =gal_MSMenu.Y+gal_MSMenu.Height -40
-            ZIndex: =47
-
-        Button3_3 As button:
-            BorderThickness: =0
-            Color: =ColorValue(inp_BackgroundColor_home.inputValue)
-            Fill: =PrimaryColor1Value
-            FontWeight: =FontWeight.Bold
-            Height: =45
-            OnSelect: =Set(showCollection,false);
-            PaddingRight: =6.03
-            RadiusBottomLeft: =2
-            RadiusBottomRight: =2
-            RadiusTopLeft: =2
-            RadiusTopRight: =2
-            Size: =18.11
-            Text: ="Cancel"
-            Visible: =showCollection
-            Width: =102
-            X: =20
-            Y: =gal_MSMenu.Y+gal_MSMenu.Height -48
-            ZIndex: =49
-
-        lbl_Collection_Output As label:
-            Color: =PrimaryColor2Value
-            Fill: =PrimaryColor2TextValue
-            Height: =Parent.Height -con_Footer_Home_1.Height - con_Header_Home_1.Height -100
-            Overflow: =Overflow.Scroll
-            Text: |-
-                ="ClearCollect(
-                    " & input_CollectionName.Text & ",
-                    " & Concat(
-                    newMenu,
-                    "{
-                        ID: "& ID & ",
-                        MenuText: """ & MenuText & """,
-                        Tab: """ & Tab & """,
-                        ParentItem: " & ParentItem & ",
-                        SubItems: " & SubItems & ",
-                        Icon: """ & Icon & """,
-                        DarkIcon: """ & DarkIcon & """,
-                        Screen: """ & Command & """
-                    }",
-                    ","
-                ) & "
-                );"
-            VerticalAlign: =VerticalAlign.Top
-            Visible: =showCollection
-            Width: |
-                =App.Width -40
-            Wrap: =false
-            X: =20
-            Y: =101
-            ZIndex: =51
 

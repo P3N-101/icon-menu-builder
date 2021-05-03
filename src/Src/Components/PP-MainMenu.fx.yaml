@@ -1,7 +1,7 @@
 "'PP-MainMenu' As CanvasComponent":
     DarkColor: =RGBA(83, 101, 150, 1)
     Fill: ='PP-MainMenu'.LightColor
-    Height: =640
+    Height: =App.Height
     hideMenu: =true
     LightColor: =RGBA(230, 234, 240, 1)
     MenuExpanded: =menuExpanded
@@ -25,13 +25,12 @@
         BorderColor: =ColorFade(lbl_MenuText.Fill,0.8)
         Default: =First('PP-MainMenu'.MenuItems)
         Fill: ='PP-MainMenu'.LightColor
-        Height: |
-            =CountRows(gal_Menu.AllItems)*55
+        Height: =CountRows('PP-MainMenu'.MenuItems)*42
         Items: ='PP-MainMenu'.MenuItems
         Layout: =Layout.Vertical
         OnSelect: =If('PP-MainMenu'.hideMenu = true,Set(menuExpanded,false),Set(menuExpanded,true))
         TemplatePadding: =0
-        TemplateSize: =50
+        TemplateSize: =40
         Width: =Parent.Width
         X: =0.00
         Y: =41
@@ -42,14 +41,13 @@
             Color: =If(ThisItem.IsSelected,'PP-MainMenu'.LightColor,'PP-MainMenu'.DarkColor)
             Fill: =If(ThisItem.IsSelected,'PP-MainMenu'.DarkColor,'PP-MainMenu'.LightColor)
             FontWeight: =FontWeight.Semibold
-            Height: =48
             HoverColor: =If(ThisItem.IsSelected, ColorFade(Self.Fill,50%),'PP-MainMenu'.MenuItemSelectColour)
             HoverFill: =If(ThisItem.IsSelected,Self.Fill, ColorFade(Self.Fill,50%))
             OnSelect: =Set(varSelectedItem,ThisItem.MenuText);Set(menuExpanded,false);
-            PaddingLeft: =60
+            PaddingLeft: =45
             PaddingRight: =6.03
             PaddingTop: =6.03
-            Size: =13.28
+            Size: =12
             Text: =ThisItem.MenuText
             Width: =640
             X: =0.00
@@ -59,7 +57,7 @@
             BorderColor: =Transparent
             Color: =If(ThisItem.IsSelected, RGBA(255, 255, 255, 1),'PP-MainMenu'.MenuItemSelectColour)
             FocusedBorderThickness: =0
-            Height: =24
+            Height: =14
             Icon: =Icon.ChevronRight
             OnSelect: =Set(varSelectedItem,ThisItem.MenuText)
             PaddingRight: =0.00
@@ -76,18 +74,16 @@
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledFill: =RGBA(0, 0, 0, 0)
             Fill: =Transparent
-            Height: =32
+            Height: =28
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: =If(ThisItem.IsSelected,ThisItem.Icon, ThisItem.DarkIcon)
             OnSelect: =Select(Parent)
-            PaddingRight: =0.00
-            PaddingTop: =0.00
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Tooltip: =ThisItem.MenuText
-            Width: =38.63
-            X: =8.45
-            Y: =7
+            Width: =28
+            X: =6
+            Y: =6
             ZIndex: =3
 

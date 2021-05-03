@@ -7,7 +7,12 @@
         B:
             Default: =100
         ThisProperty:
-            Default: =Sum(('Accessibility Helpers'.sRGBtoLin(R)* 0.2126)  +  ('Accessibility Helpers'.sRGBtoLin(G) * 0.7152) + ('Accessibility Helpers'.sRGBtoLin(B)*0.0722))
+            Default: |-
+                =Sum(
+                    ('Accessibility Helpers'.sRGBtoLin(R) * 0.2126) + 
+                    ('Accessibility Helpers'.sRGBtoLin(G) * 0.7152) + 
+                    ('Accessibility Helpers'.sRGBtoLin(B) * 0.0722)
+                )
     sRGBtoLin(colorChannel As Number):
         colorChannel:
             Default: =100

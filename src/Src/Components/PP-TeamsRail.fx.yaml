@@ -20,6 +20,7 @@
     ZIndex: =1
 
     gal_Menu_1 As gallery.galleryVertical:
+        AccessibleLabel: ="Menu"
         BorderColor: =ColorFade(lbl_MenuText_1.Fill,0.8)
         Default: =First('PP-TeamsRail'.MenuItems)
         Fill: ='PP-TeamsRail'.LightColor
@@ -27,6 +28,7 @@
         Items: ='PP-TeamsRail'.MenuItems
         Layout: =Layout.Vertical
         OnSelect: =If('PP-TeamsRail'.hideMenu = true,Set(menuExpanded,false),Set(menuExpanded,true))
+        TabIndex: =1
         TemplatePadding: =0
         TemplateSize: =70
         Width: =Parent.Width
