@@ -51,6 +51,8 @@ You will require a Power Platform environment conigured with a database and conf
 
 Open the solution and play the canvas app.
 
+# Update 1.0.0.10
+Bug fix to the collection output screen not showing:
 # Update 1.0.0.9
 Some major changes in this release:
 ## New Icons
