@@ -4,8 +4,9 @@ The Icon Menu Builder is a Power Apps Maker tool designed to help accelerate app
 
 >Your ultimate Icon resource for Power Apps
 
-!!! information "Mimumum path to awesome"
-    Check out the new documentation site [Installation Guide](https://pensplace.github.io/icon-menu-builder-docs/installation/)
+information "Mimumum path to awesome"
+> Check out the new documentation site
+> [Installation Guide](https://pensplace.github.io/icon-menu-builder-docs/installation/)
 
 ![Home Screen](./assets/home-screen.png)
 ## Features
@@ -38,19 +39,18 @@ The Icon Menu Builder is a Power Apps Maker tool designed to help accelerate app
 - Flags - 3 types, [Square, 4x3](https://github.com/lipis/flag-icon-css) v3.5.0 and [circle](https://github.com/HatScripts/circle-flags) v2.1 (1594)
 - [Super Tiny Icons](https://github.com/edent/SuperTinyIcons) (284)
 - __Total:__       29,405
-# Mimimum path to awesome
 
-You will require a Power Platform environment conigured with a database and configured to allow Code Components for canvas apps. All the solutions required are in the solutions folder.
 
-1. Import the ColorPicker_Managed.zip solution
-2. Import the CopyTextSolution.zip solution
-3. Import the CanvasFileUploaderComponent_managed.zip solution
-4. Import the CanvasFileDownloaderControl.zip solution
-5. Import the IconMenuBuilder_1_0_0_11_managed.zip
+# Update 1.0.0.11
 
-Open the solution and play the canvas app.
+Now requires access to a SharePoint site to support the following new features:
+- __My Favourites__ - save icons for easy reference
+- __My Menus__ - Save and share menu configurations
 
-# Update 1.0.0.10
+New Icon Sets:
+- Remix
+- Tabler
+- Pixelart
 
 # Update 1.0.0.10
 Bug fix to the collection output screen not showing:
