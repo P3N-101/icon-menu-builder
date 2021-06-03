@@ -4,11 +4,10 @@ The Icon Menu Builder is a Power Apps Maker tool designed to help accelerate app
 
 >Your ultimate Icon resource for Power Apps
 
-![Home Page](./assets/1.0.0.9.png)
-### Menu Builder Screen
-![Menu Builder](./assets/1.0.0.9-1.png)
-### Collection Output
-![Collection Output](./assets/1.0.0.9-2.png)
+!!! information "Mimumum path to awesome"
+    Check out the new documentation site [Installation Guide](https://pensplace.github.io/icon-menu-builder-docs/installation/)
+
+![Home Screen](./assets/home-screen.png)
 ## Features
 - Create Menu Icon Collections for the Components and gallery examples included in the solution
 - Copy Image data and Collection code to the clipboard, using [Todd Baginski](https://github.com/TBag/power-apps-copy-text-to-clipboard) PCFCopyTextComponent.
@@ -39,7 +38,7 @@ The Icon Menu Builder is a Power Apps Maker tool designed to help accelerate app
 - Flags - 3 types, [Square, 4x3](https://github.com/lipis/flag-icon-css) v3.5.0 and [circle](https://github.com/HatScripts/circle-flags) v2.1 (1594)
 - [Super Tiny Icons](https://github.com/edent/SuperTinyIcons) (284)
 - __Total:__       29,405
-# Installation
+# Mimimum path to awesome
 
 You will require a Power Platform environment conigured with a database and configured to allow Code Components for canvas apps. All the solutions required are in the solutions folder.
 
@@ -47,9 +46,11 @@ You will require a Power Platform environment conigured with a database and conf
 2. Import the CopyTextSolution.zip solution
 3. Import the CanvasFileUploaderComponent_managed.zip solution
 4. Import the CanvasFileDownloaderControl.zip solution
-5. Import the IconMenuBuilder_1_0_0_9_managed.zip
+5. Import the IconMenuBuilder_1_0_0_11_managed.zip
 
 Open the solution and play the canvas app.
+
+# Update 1.0.0.10
 
 # Update 1.0.0.10
 Bug fix to the collection output screen not showing:
