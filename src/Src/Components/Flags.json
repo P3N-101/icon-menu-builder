@@ -18,7 +18,7 @@
       "Name": "Flags",
       "PropertyDataTypeKey": "Table",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"Image\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Name\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+      "Type": "{\"Version\":\"1.312\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"Image\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Name\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
     }
   ],
   "FirstParty": true,
@@ -27,8 +27,8 @@
   "IsComponentTemplate": true,
   "IsCustomGroupControlTemplate": false,
   "IsPremiumPcfControl": false,
-  "LastModifiedTimestamp": "637556288122326073",
+  "LastModifiedTimestamp": "637583387801229761",
   "Name": "251d3182c5f14ebda0954caccc8061c6",
   "OverridableProperties": {},
-  "Version": "637556348636870910"
+  "Version": "637583395204350431"
 }

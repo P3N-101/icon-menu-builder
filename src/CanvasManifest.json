@@ -1,13 +1,13 @@
 {
   "FormatVersion": "0.20",
   "Header": {
-    "DocVersion": "1.309",
-    "MinVersionToLoad": "1.309",
+    "DocVersion": "1.312",
+    "MinVersionToLoad": "1.312",
     "MSAppStructureVersion": "2.0"
   },
   "Properties": {
     "AppCreationSource": "AppFromScratch",
-    "AppDescription": "Fluent UI Icon Menu generator for PowerApps",
+    "AppDescription": "Icon Menu Builderr for PowerApps",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": true,
       "autocreateenvironmentvariables": true,
@@ -23,6 +23,8 @@
       "enableaimodelsindatapane": false,
       "enableappembeddingux": true,
       "enablecdsfileandlargeimage": true,
+      "enableexcelonlinebusinessv2connector": false,
+      "enableonstart": true,
       "enableonstartnavigate": false,
       "enablepcfmoderndatasets": false,
       "enablerowscopeonetonexpand": true,
@@ -42,7 +44,7 @@
       "nativecdsexperimental": true,
       "optimizedforteamsmeeting": false,
       "parallelcodegen": false,
-      "projectionmapping": false,
+      "projectionmapping": true,
       "reactformulabar": false,
       "reliableconcurrent": true,
       "usedisplaynamemetadata": true,
@@ -67,7 +69,7 @@
     "EnableInstrumentation": false,
     "ErrorCount": 0,
     "FileID": "7a49eb02-625f-4bc4-9b2d-9d1c7054dd77",
-    "Id": "987c0927-ab3e-4d2d-8fa7-6d4c35d3bd2c",
+    "Id": "ffb4a968-aaac-43c7-8fc9-d77e38faf7cf",
     "InstrumentationKey": "",
     "Name": "Icon+Menu+Builder.msapp",
     "OriginatingVersion": "1.302"
@@ -84,8 +86,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Home",
-    "Menu Builder",
-    "Screen1"
+    "Create Menu",
+    "Menu Demo's"
   ]
 }

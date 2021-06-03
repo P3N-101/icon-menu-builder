@@ -32,7 +32,7 @@
         Text: ="Icon Menu Builder"
         Width: =393.58
         Wrap: =false
-        X: =176.27
+        X: =228
         ZIndex: =3
 
     _seperator As label:
@@ -45,17 +45,18 @@
         Text: ="|"
         Visible: =If(App.Width > 600,true,false)
         Width: =27.77
-        X: =402.03
+        X: =454
         ZIndex: =4
 
     Image1_1 As image:
         BorderColor: =Transparent
         Height: =55
         Image: ='PP-Header'.Logo
+        OnSelect: =Navigate('PP-Header'.HomeScreen,ScreenTransition.Fade)
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =158.15
-        X: =18.11
+        X: =70
         ZIndex: =5
 
     lbl_ScreenName As label:
@@ -68,7 +69,7 @@
         Text: =App.ActiveScreen.Name
         Visible: =If(App.Width > 600,true,false)
         Width: =895.82
-        X: =429.80
+        X: =481
         ZIndex: =6
 
     Image4 As image:
@@ -77,4 +78,14 @@
         Width: =919
         X: =App.Width -919
         ZIndex: =7
+
+    Icon11 As icon.Home:
+        Color: =White
+        Height: =43
+        Icon: =Icon.Home
+        OnSelect: =Navigate('PP-Header'.HomeScreen,ScreenTransition.Fade)
+        Width: =34
+        X: =14
+        Y: =6
+        ZIndex: =8
 

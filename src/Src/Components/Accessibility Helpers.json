@@ -18,7 +18,7 @@
       "Name": "GetLuminance",
       "PropertyDataTypeKey": "Number",
       "PropertyScopeKey": {
-        "PropertyScopeRuleNamespaceKey": "22",
+        "PropertyScopeRuleNamespaceKey": "23",
         "PropertyScopeRulesKey": [
           {
             "DisplayName": "GetLuminance_R",
@@ -33,7 +33,7 @@
               "ScopeVariableName": "R"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.312\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "GetLuminance_G",
@@ -48,7 +48,7 @@
               "ScopeVariableName": "G"
             },
             "Tooltip": "G",
-            "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.312\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "GetLuminance_B",
@@ -63,12 +63,12 @@
               "ScopeVariableName": "B"
             },
             "Tooltip": "B",
-            "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.312\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.312\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -77,7 +77,7 @@
       "Name": "sRGBtoLin",
       "PropertyDataTypeKey": "Number",
       "PropertyScopeKey": {
-        "PropertyScopeRuleNamespaceKey": "22",
+        "PropertyScopeRuleNamespaceKey": "23",
         "PropertyScopeRulesKey": [
           {
             "DisplayName": "sRGBtoLin_colorChannel",
@@ -92,12 +92,12 @@
               "ScopeVariableName": "colorChannel"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.312\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.312\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -106,9 +106,9 @@
   "IsComponentTemplate": true,
   "IsCustomGroupControlTemplate": false,
   "IsPremiumPcfControl": false,
-  "LastModifiedTimestamp": "637556288122212525",
+  "LastModifiedTimestamp": "637583387801126019",
   "Name": "6fda9d5d46344732b503488ec8d08939",
   "OverridableProperties": {},
   "TemplateOriginalName": "ce6aaab41aa34dada80390b2fa9447af",
-  "Version": "637556348636865231"
+  "Version": "637583395204344285"
 }

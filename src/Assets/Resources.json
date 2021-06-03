@@ -33,6 +33,17 @@
       "ResourceKind": "LocalFile",
       "Schema": "i",
       "Type": "ResourceInfo"
+    },
+    {
+      "Content": "Image",
+      "FileName": "MenuBuilder.svg",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Name": "MenuBuilder",
+      "Path": "Assets\\Images\\MenuBuilder.svg",
+      "ResourceKind": "LocalFile",
+      "Schema": "i",
+      "Type": "ResourceInfo"
     }
   ]
 }

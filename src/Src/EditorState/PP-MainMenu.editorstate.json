@@ -90,7 +90,15 @@
       },
       "ZIndex",
       "Default",
-      "FocusedBorderThickness"
+      "FocusedBorderThickness",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "ShowScrollbar",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      }
     ],
     "GalleryTemplateChildName": "galleryTemplate4_1",
     "HasDynamicProperties": false,
@@ -234,6 +242,11 @@
       {
         "Category": "Design",
         "PropertyName": "FocusedBorderThickness",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "ShowScrollbar",
         "RuleProviderType": "Unknown"
       }
     ],
@@ -1237,7 +1250,7 @@
       {
         "Category": "Data",
         "PropertyName": "MenuItems",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Data",

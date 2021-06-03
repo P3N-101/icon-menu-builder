@@ -3,7 +3,8 @@
     Height: ='PP-hIconBar'.Size
     Items: |-
         =Table({ID: 1, DarkIcon: SampleImage, Command:"OnSelect"},{ID: 2, DarkIcon: SampleImage, Command:"OnSelect"},{ID: 3, DarkIcon: SampleImage, Command:"OnSelect"})
-    Size: =50
+    Size: |
+        =50
     VarSelectedItem: =gal_hIconBar.Selected.ID
     Width: =CountRows('PP-hIconBar'.Items) * 'PP-hIconBar'.Size
     X: =0

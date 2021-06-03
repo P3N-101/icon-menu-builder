@@ -9,7 +9,7 @@
     MenuItemDarkIcon: =SampleImage
     MenuItemIcon: =Icon.Person
     MenuItems: |-
-        =Table({MenuText:"Sample",Tab:"Sample",Icon:SampleImage,DarkIcon:SampleImage})
+        =Table({ID:1,MenuText:"New Menu Item",Tab:"Sample",Icon:SampleImage,DarkIcon:SampleImage,ParentID:0})
     MenuItemSelectColour: =ColorFade(RGBA(10,36,106,1),0.3)
     OnReset: ='PP-MainMenu'.reset
     reset: =true
@@ -25,12 +25,12 @@
         BorderColor: =ColorFade(lbl_MenuText.Fill,0.8)
         Default: =First('PP-MainMenu'.MenuItems)
         Fill: ='PP-MainMenu'.LightColor
-        Height: =CountRows('PP-MainMenu'.MenuItems)*42
-        Items: ='PP-MainMenu'.MenuItems
+        Height: =Parent.Height-50
+        Items: =Filter('PP-MainMenu'.MenuItems,ParentID=0)
         Layout: =Layout.Vertical
         OnSelect: =If('PP-MainMenu'.hideMenu = true,Set(menuExpanded,false),Set(menuExpanded,true))
         TemplatePadding: =0
-        TemplateSize: =40
+        TemplateSize: =40 
         Width: =Parent.Width
         X: =0.00
         Y: =41
