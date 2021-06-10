@@ -40,7 +40,9 @@ information "Mimumum path to awesome"
 - [Super Tiny Icons](https://github.com/edent/SuperTinyIcons) (284)
 - __Total:__       29,405
 
-
+# Update 1.0.0.12
+Added new Dynamics icons
+bug fix editing and saving menu's
 # Update 1.0.0.11
 
 Now requires access to a SharePoint site to support the following new features:
