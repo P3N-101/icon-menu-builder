@@ -1,85 +1,11 @@
-# Icon Menu Builder for Power Apps
+# Icon Menu Builder for Power Apps v2
 
 The Icon Menu Builder is a Power Apps Maker tool designed to help accelerate app development and to ensure accessibility of theme color contrasts.  The app outputs a Power fx collection that can be used in many ways, examples are shown on the 'Menu Builder' screen.
 
 >Your ultimate Icon resource for Power Apps
 
-information "Mimumum path to awesome"
-> Check out the new documentation site
-> [Installation Guide](https://pensplace.github.io/icon-menu-builder-docs/installation/)
+> Please follow the installation instrutions on the docs site.
+> [User Guide](https://pensplace.github.io/icon-menu-builder-docs/)
 
 ![Home Screen](./assets/home-screen.png)
-## Features
-- Create Menu Icon Collections for the Components and gallery examples included in the solution
-- Copy Image data and Collection code to the clipboard, using [Todd Baginski](https://github.com/TBag/power-apps-copy-text-to-clipboard) PCFCopyTextComponent.
-- Over 39,000 icons included, with no data source required
-- Color Picker from PowerApps COE
-- Contrast Checker for WCAG 2.1 contrast accessibility
-- Responsive - Min Res 1920x1080 - made for hi res screens
-- Upload any image and get the dataurl for an Image control or add to the menu!
-- Download any image as SVG file
 
-# Update 1.0.0.17
-- Added 6 Font Icons
-- Updated interface components
-- added menu demo's screen### Font Icons
-
-## Font Icons
-- AzDevMDL2 - SVGs exported from the AzDevMDL2 font (541)
-- SegoeMDL2 - SVGs exported from the SegoeMDL2 font (1433)
-- [MDL2](https://github.com/scottdorman/mdl2-icons/) (1268) v1.0.0
-- [Icofont](https://www.icofont.com/) (2100)
-- Meows - (52)
-- Bowtie Font - SVGs exported from the Bowtie font (550)
-
-__Total:__   39545
-
-
-# Update 1.0.0.12
-Added new Dynamics icons
-bug fix editing and saving menu's
-# Update 1.0.0.11
-
-Now requires access to a SharePoint site to support the following new features:
-- __My Favourites__ - save icons for easy reference
-- __My Menus__ - Save and share menu configurations
-
-New Icon Sets:
-- Remix
-- Tabler
-- Pixelart
-
-# Update 1.0.0.10
-Bug fix to the collection output screen not showing:
-# Update 1.0.0.9
-Some major changes in this release:
-## New Icons
-- Bootstrap icons
-- Feather Icons
-- Iconic Icons
-- 3 styles of Flag Icons
-- Super Tiny Icons
-- Public Domain
-- Eva
-- More Noto Emoji's
-- Game Icons
-## Features
-- Removed the majority of components previously used as static datasource, now imported from Excel, reduced the file size by 10mb to approx 25mb while added 9000 more icons...
-- Redesigned Menu Builder
-- New Screen to view the menu in different menu styles
-- Upload any image file and create PowerFx Image tag or add to the menu, users Rick Wilson's FileUploaderComponent
-# Update 1.0.0.8
-Added 2307 Noto Emoji's
-# Update 1.0.0.7
-- Renamed to 'Icon Menu Builder' as it includes more than just the Fluent UI Icons
-- Download SVG files from created icons... Utilises [CanvasFileDownloaderControl](https://github.com/rwilson504/PCFControls/releases) - you will need to install this in your environment to use this new version.
-- Created for large screen usage... ;)
-- Updated the Collection Screen to make it clearer to read.
-# Update 1.0.0.6
-- Fixed wrapcount calculations on the Icons gallery so it displays correctly when the menu container is expanded
-# Update 1.0.0.5
-
-- Refactored Icon collections into output properties of a new component __PP-Icons__ for performance and making editing possible (Pushing the limits of how much data can be self contained)
-- Added 5962 Material Design Icons
-- Added 1075 VS Code Icons
-- Add Menu add multi-colored icons to the newMenu collection
